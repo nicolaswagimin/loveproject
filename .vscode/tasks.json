@@ -1,0 +1,29 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run Django server",
+			"type": "shell",
+			"command": "python manage.py runserver",
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Run Django server (venv)",
+			"type": "shell",
+			"command": "/Users/nicolaswagiminbravo/loveproject/.venv/bin/python manage.py runserver",
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Run Django server (venv)",
+			"type": "shell",
+			"command": "/Users/nicolaswagiminbravo/loveproject/.venv/bin/python manage.py runserver",
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}

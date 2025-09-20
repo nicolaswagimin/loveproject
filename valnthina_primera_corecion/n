@@ -1,0 +1,7 @@
+icolaswagiminbravo/loveproject/valnthina_primera_corecion/asgi.py
+import os
+from django.core.asgi import get_asgi_application
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'valnthina_primera_corecion.settings')
+
+application = get_asgi_application()
