@@ -4,15 +4,18 @@ import dj_database_url
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-DEBUG = True
-
+SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "clave-insegura-para-dev")
+DEBUG = False
 ALLOWED_HOSTS = ["*"]
+
+INSTALLED_APPS = [
+    # ...tus apps...
+    'django.contrib.staticfiles',
+    # ...tus apps...
+]
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-
-# Para producción, usa una clave secreta desde variables de entorno
-SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "clave-insegura-para-dev")
 
 DATABASES = {
     'default': dj_database_url.config(
@@ -20,9 +23,3 @@ DATABASES = {
         conn_max_age=600
     )
 }
-
-INSTALLED_APPS = [
-    # ...existing apps...
-    'django.contrib.staticfiles',
-    # ...existing apps...
-]
