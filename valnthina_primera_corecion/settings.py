@@ -9,9 +9,8 @@ DEBUG = False
 ALLOWED_HOSTS = ["*"]
 
 INSTALLED_APPS = [
-    # ...tus apps...
+    # ... tus apps ...
     'django.contrib.staticfiles',
-    # ...tus apps...
 ]
 
 STATIC_URL = '/static/'
@@ -23,3 +22,5 @@ DATABASES = {
         conn_max_age=600
     )
 }
+
+ROOT_URLCONF = 'valnthina_primera_corecion.urls'
