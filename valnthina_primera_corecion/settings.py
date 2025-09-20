@@ -16,7 +16,7 @@ SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "clave-insegura-para-dev")
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='sqlite:///db.sqlite3',  # Para desarrollo local
+        default='sqlite:///db.sqlite3',
         conn_max_age=600
     )
 }
