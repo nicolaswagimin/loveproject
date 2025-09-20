@@ -4,7 +4,9 @@ import dj_database_url
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-ALLOWED_HOSTS = ["*", "localhost", "127.0.0.1"]
+DEBUG = True
+
+ALLOWED_HOSTS = ["*"]
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
