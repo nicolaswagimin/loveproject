@@ -18,3 +18,9 @@ DATABASES = {
         conn_max_age=600
     )
 }
+
+INSTALLED_APPS = [
+    # ...existing apps...
+    'django.contrib.staticfiles',
+    # ...existing apps...
+]
